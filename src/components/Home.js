@@ -1,25 +1,22 @@
-import React, { useState, useEffect } from 'react'
-import SocialMediaCard from './SocialMediaCard'
+import React from 'react'
 import './home.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
-const Home = ({ homeCard:{ title, subtitle, socialMedia } }) => {
-    const [filteredSocialMedia, setFilteredSocialMedia] = useState(null)
+const TITLE = 'Elizabeth Parnell'
+const SUBTITLE = 'Software Engineer | Educator | Crazy Cat Lady'
 
-    const filterSocialMedia = socialMedia => socialMedia.filter(social => social.url !== '')
-
-    useEffect(() => {
-        setFilteredSocialMedia(filterSocialMedia(socialMedia))
-    },[socialMedia])
-
-    return (
-        <>
-            <h1>{title}</h1>
-            <h2>{subtitle}</h2>
-            {filteredSocialMedia && ( 
-                <SocialMediaCard filteredSocialMedia={filteredSocialMedia}/>
-            )}
-        </>
-    )
+const Home = () => {
+	return (
+		<div className='home-card'>
+			<h1>{TITLE}</h1>
+			<h2>{SUBTITLE}</h2>
+			<button onClick={() => console.log('i was clicked woot!')}>
+				<FontAwesomeIcon icon={faChevronDown} size='4x' />
+			</button>
+		</div>
+	)
 }
 
 export default Home

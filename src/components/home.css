@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.home-card {
+    font-family: 'Kaushan Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: .1em;
+}
+
+.home-card > h1 {
+    font-size: 8em;
+}
+
+.home-card > button {
+    border: none;
+    background: none;
+}
