@@ -1,11 +1,15 @@
 import './App.css'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Home from './components/Home'
+import Title from './components/Title'
+import TagLine from './components/TagLine'
+import Icon from './components/Icon'
 
 function App() {
-  return (
+	return (
 		<Router>
-			<Home />
+			<Title />
+			<TagLine />
+			<Icon />
 		</Router>
 	)
 }

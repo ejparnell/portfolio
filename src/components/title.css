@@ -1,0 +1,38 @@
+.title-sm-mobile {
+    display: flex;
+    justify-content: center;
+    font-size: 8em;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.title-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+    font-size: 4em;
+}
+
+.title-sm-screen-laptop {
+    display: flex;
+    font-size: 6.5em;
+    flex-direction: column;
+    width: 650px;
+    margin: 3em auto 1em auto;
+}
+
+.title-sm-screen-laptop-main-left{
+    align-self: flex-start;
+}
+
+.title-sm-screen-laptop-main-right{
+    align-self: flex-end;
+}
+
+.title-desktop {
+    display: flex;
+    justify-content: center;
+    font-size: 9em;
+    margin-top: 1.2em;
+}

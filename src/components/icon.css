@@ -1,6 +1,24 @@
-.icon-card {
+.icon-card-small {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.taller-card {
+    margin-top: 2em;
+}
+
+.icon-link-small {
+    margin: .2em;
+}
+
+.taller-link {
+    margin-top: 1.5em;
+}
+
+.icon-card-main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5em;
 }
