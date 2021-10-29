@@ -15,8 +15,3 @@ npm install --save @fortawesome/free-regular-svg-icons
 ```
 npm install react-router-dom
 ```
-
-### Material UI
-```
-npm install @material-ui/core
-```

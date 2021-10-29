@@ -19,23 +19,27 @@ const Title = () => {
 	}
 
 	const smMobile = () => (
-		<h1 className='title-sm-mobile'>
+		<div className='title-sm-mobile'>
 			<span>E</span>
 			<span>P</span>
-		</h1>
+		</div>
 	)
 
 	const mainView = () => (
 		<h1 className={style()}>
 			<span
 				className={
-					SM_SCREEN_LAPTOP(width) ? 'title-sm-screen-laptop-main-left' : false
+					SM_SCREEN_LAPTOP(width) || DESKTOP(width)
+						? 'title-sm-screen-laptop-main-left'
+						: ''
 				}>
 				Elizabeth
 			</span>
 			<span
 				className={
-					SM_SCREEN_LAPTOP(width) ? 'title-sm-screen-laptop-main-right' : false
+					SM_SCREEN_LAPTOP(width) || DESKTOP(width)
+						? 'title-sm-screen-laptop-main-right'
+						: ''
 				}>
 				Parnell
 			</span>
@@ -43,11 +47,11 @@ const Title = () => {
 	)
 
 	return (
-		<>
+		<div>
 			{SM_MOBILE(width) && smMobile()}
 			{(TABLET(width) || SM_SCREEN_LAPTOP(width) || DESKTOP(width)) &&
 				mainView()}
-		</>
+		</div>
 	)
 }
 

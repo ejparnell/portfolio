@@ -6,7 +6,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import Pdf from './../Elizabeth_Parnell_Resume.pdf'
 import { useViewport } from '../useViewport'
-import { SM_MOBILE, TABLET, SM_SCREEN_LAPTOP } from '../viewPortConst'
+import { SM_MOBILE, TABLET } from '../viewPortConst'
 
 const Icon = () => {
 	const { width, height } = useViewport()
@@ -56,21 +56,33 @@ const Icon = () => {
 				target='_blank'
 				style={{ color: 'black' }}
 				className={styleLink()}>
-				<FontAwesomeIcon icon={faGithub} size={'5x'} />
+				<FontAwesomeIcon
+					icon={faGithub}
+					size={'5x'}
+					style={{ color: '#a88471'}}
+				/>
 			</Link>
 			<Link
 				to={{ pathname: LINKEDIN }}
 				target='_blank'
 				style={{ color: 'black' }}
 				className={styleLink()}>
-				<FontAwesomeIcon icon={faLinkedin} size={'5x'} />
+				<FontAwesomeIcon
+					icon={faLinkedin}
+					size={'5x'}
+					style={{ color: '#a88471' }}
+				/>
 			</Link>
 			<Link
 				to={{ pathname: Pdf }}
 				target='_blank'
 				style={{ color: 'black' }}
 				className={styleLink()}>
-				<FontAwesomeIcon icon={faFilePdf} size={'5x'} />
+				<FontAwesomeIcon
+					icon={faFilePdf}
+					size={'5x'}
+					style={{ color: '#a88471' }}
+				/>
 			</Link>
 		</div>
 	)
