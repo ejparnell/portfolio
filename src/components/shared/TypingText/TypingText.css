@@ -1,0 +1,7 @@
+.typing-text {
+    font-size: var(--sub-heading-font-size);
+}
+
+.typing-text-cursor {
+    font-size: var(--sub-heading-font-size);
+}
