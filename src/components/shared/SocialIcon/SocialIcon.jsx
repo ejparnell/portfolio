@@ -3,7 +3,7 @@ import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 
-import './socialicon.css'
+import './SocialIcon.css'
 
 export default function SocialIcon({ socials }) {
 
