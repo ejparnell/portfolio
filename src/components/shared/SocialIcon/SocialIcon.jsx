@@ -3,20 +3,18 @@ import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 
-import './SocialIcon.css'
-
 export default function SocialIcon({ socials }) {
 
     const icons = socials.map((social, index) => {
         return (
-            <Link to={social.url} target='_blank' rel='noreferrer' key={index} className='social-link'>
+            <Link to={social.url} target='_blank' rel='noreferrer' key={index} style={{color: 'black', marginRight: '10px'}}>
                 <FontAwesomeIcon icon={social.name === 'github' ? faGithubSquare : faLinkedin } size='3x'/>
             </Link>
         )
     })
 
     return (
-        <div className='social-icons-container'>
+        <div style={{margin: '25px'}}>
             {icons}
         </div>
         
