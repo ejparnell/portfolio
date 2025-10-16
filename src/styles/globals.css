@@ -21,7 +21,8 @@ body {
 
 :root {
     --font-roboto: 'Roboto', sans-serif;
-    
+
+    /* Typography */
     --font-size-body-mobile: 16px;
     --font-size-caption-mobile: 12px;
     --font-size-subheading-mobile: 20px;
@@ -60,4 +61,15 @@ body {
 
     /* Supporting Colors */
     --color-white: #FFFFFF;
+
+    /* Spacing */
+    --spacing-0: 4px;
+    --spacing-1: 8px;
+    --spacing-2: 16px;
+    --spacing-3: 24px;
+    --spacing-4: 32px;
+    --spacing-5: 40px;
+    --spacing-6: 48px;
+    --spacing-7: 64px;
+    --spacing-8: 80px;
 }

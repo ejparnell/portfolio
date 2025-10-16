@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Navbar from '@/components/Navbar';
+import styles from './layout.module.css';
+
 export default function SiteLayout({
     children,
 }: {
@@ -7,7 +10,10 @@ export default function SiteLayout({
 }) {
     return (
         <div>
-            {children}
+            <Navbar />
+            <main>
+                {children}
+            </main>
         </div>
     );
 }
