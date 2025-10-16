@@ -1,0 +1,63 @@
+@import './typography.css';
+
+::before,
+::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-roboto), sans-serif;
+    font-size: var(--font-size-body-mobile);
+    line-height: var(--line-height-body-mobile);
+    letter-spacing: var(--letter-spacing-body);
+    font-weight: var(--font-weight-normal);
+
+    color: var(--color-bossanova);
+    background-color: var(--white);
+}
+
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    
+    --font-size-body-mobile: 16px;
+    --font-size-caption-mobile: 12px;
+    --font-size-subheading-mobile: 20px;
+    --font-size-heading-mobile: 24px;
+
+    --font-size-body: 18px;
+    --font-size-caption: 14px;
+    --font-size-subheading: 24px;
+    --font-size-heading: 32px;
+
+    --line-height-body-mobile: 24px;
+    --line-height-caption-mobile: 16px;
+    --line-height-subheading-mobile: 24px;
+    --line-height-heading-mobile: 32px;
+
+    --line-height-body: 32px;
+    --line-height-caption: 24px;
+    --line-height-subheading: 32px;
+    --line-height-heading: 40px;
+
+    --letter-spacing-body: 0.01em;
+    --letter-spacing-caption: 0.02em;
+    --letter-spacing-subheading: -0.01em;
+    --letter-spacing-heading: -0.02em;
+
+    --font-weight-light: 200;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* Main Color Palette */
+    --color-wild-younder: #6E83B9;
+    --color-spray: #72CFD8;
+    --color-mulberry: #D3568B;
+    --color-gamboge: #F2980B;
+    --color-bossanova: #534956;
+
+    /* Supporting Colors */
+    --color-white: #FFFFFF;
+}
