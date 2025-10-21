@@ -10,7 +10,7 @@
 
 ## 🚀 Live Demo
 
-🔗 **[View Portfolio](https://your-portfolio-url.netlify.app)** *(Update with your actual URL)*
+🔗 **[View Portfolio](https://eparnell.me/)**
 
 ## 📱 Screenshots
 
@@ -192,7 +192,7 @@ The portfolio is fully responsive with breakpoints at:
 - Project cards adapt to container width
 - Typography scales fluidly across all devices
 
-## � Design Features
+## Design Features
 
 ### Abstract Visual Elements
 
