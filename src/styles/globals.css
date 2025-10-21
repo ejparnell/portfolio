@@ -62,6 +62,14 @@ body {
     /* Supporting Colors */
     --color-white: #FFFFFF;
 
+    /* Saturn Visual Colors */
+    --color-saturn-yellow: #F9B256;
+    --color-saturn-orange: #F7917D;
+    --color-saturn-pink: #E35390;
+    --color-saturn-purple: #A42C6B;
+    --color-saturn-ring: #fdc070;
+    --color-saturn-accent: #ffdbac;
+
     /* Spacing */
     --spacing-0: 4px;
     --spacing-1: 8px;

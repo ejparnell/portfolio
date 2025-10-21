@@ -1,0 +1,281 @@
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: var(--spacing-3);
+    text-align: left;
+    position: relative;
+}
+
+.header {
+    margin-bottom: var(--spacing-5);
+}
+
+.heading {
+    font-size: clamp(32px, 8vw, 48px);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-3);
+    line-height: 1.2;
+}
+
+.subheading {
+    font-size: clamp(16px, 4vw, var(--font-size-subheading));
+    font-weight: var(--font-weight-normal);
+    margin-bottom: var(--spacing-5);
+    line-height: 1.4;
+}
+
+.description {
+    font-size: clamp(14px, 3.5vw, var(--font-size-body));
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
+    margin-bottom: var(--spacing-6);
+}
+
+.contactLinks {
+    margin-top: var(--spacing-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-4);
+}
+
+.contactLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60px;
+    width: 60px;
+    transition: transform 0.3s ease;
+    color: inherit;
+    text-decoration: none;
+    gap: var(--spacing-1);
+}
+
+.contactLink:hover {
+    transform: scale(1.1);
+}
+
+.circleLines {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circleLine {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: var(--color-saturn-orange);
+    opacity: 0.3;
+    top: 0;
+}
+
+.circleLine:nth-child(1) { left: 0px; }
+.circleLine:nth-child(2) { left: 20px; }
+.circleLine:nth-child(3) { left: 40px; }
+.circleLine:nth-child(4) { left: 60px; }
+.circleLine:nth-child(5) { left: 80px; }
+.circleLine:nth-child(6) { left: 100px; }
+.circleLine:nth-child(7) { left: 120px; }
+.circleLine:nth-child(8) { left: 140px; }
+.circleLine:nth-child(9) { left: 160px; }
+.circleLine:nth-child(10) { left: 180px; }
+
+.circleTransparent {
+    position: absolute;
+    bottom: 150px;
+    right: -85px;
+    width: 150px;
+    height: 150px;
+    background: var(--color-saturn-yellow);
+    background: linear-gradient(90deg, rgba(249, 178, 86, 0) 0%, var(--color-saturn-orange) 100%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.circleAccent {
+    position: absolute;
+    bottom: 250px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    pointer-events: none;
+    border: 2px solid var(--color-saturn-orange);
+    z-index: -1;
+}
+
+.saturnVisualContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.saturnVisualPlanet {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    background: radial-gradient(circle at 30% 30%, var(--color-saturn-yellow), var(--color-saturn-orange) 40%, var(--color-saturn-pink) 70%, var(--color-saturn-purple) 100%);
+    filter: drop-shadow(0 0 30px var(--color-saturn-ring));
+}
+
+.saturnVisualPlanet::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 70% 70%, rgba(164, 44, 107, 0.6), rgba(164, 44, 107, 0.3) 40%, rgba(164, 44, 107, 0) 70%);
+}
+
+.saturnVisualPlanet::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 20% 20%, rgba(227, 83, 144, 0), rgba(227, 83, 144, 0.2) 50%, rgba(164, 44, 107, 0.4) 80%);
+}
+
+.saturnVisualRing {
+    height: 250px;
+    width: 250px;
+    border: 15px solid var(--color-saturn-ring);
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+    left: -70px;
+    background-color: transparent;
+    opacity: 0.75;
+}
+
+.saturnVisualCircle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 115px;
+    background: transparent;
+    border: 2px solid var(--color-saturn-accent);
+}
+
+.saturnVisualTriangle {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    width: 45px;
+    height: 45px;
+    border-bottom: 2px solid var(--color-saturn-accent);
+}
+
+.saturnVisualTriangle::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    width: 45px;
+    height: 47px;
+    border-right: 2px solid var(--color-saturn-accent);
+    rotate: 30deg;
+}
+
+.saturnVisualTriangle::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    width: 45px;
+    height: 47px;
+    border-left: 2px solid var(--color-saturn-accent);
+    rotate: -30deg;
+}
+
+.saturnVisualLines {
+    position: absolute;
+    top: 100px;
+    left: 47px;
+    width: 2px;
+    height: 110px;
+    border: 3px solid var(--color-saturn-accent);
+}
+
+.saturnVisualLines::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 2px;
+    height: 110px;
+    border: 1px solid var(--color-saturn-accent);
+}
+
+/* Saturn Visual Responsive Scaling */
+@media (min-width: 900px) {
+    .saturnVisualContainer {
+        transform: scale(1.5);
+        transform-origin: top left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .saturnVisualContainer {
+        transform: scale(2);
+        transform-origin: top left;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 700px;
+        padding: var(--spacing-4);
+    }
+    
+    .heading {
+        font-size: clamp(40px, 6vw, 56px);
+    }
+    
+    .subheading {
+        font-size: clamp(18px, 3vw, 22px);
+    }
+    
+    .description {
+        font-size: clamp(16px, 2.5vw, 18px);
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 800px;
+        padding: var(--spacing-6);
+    }
+    
+    .heading {
+        font-size: 64px;
+    }
+    
+    .subheading {
+        font-size: 24px;
+    }
+    
+    .description {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+}

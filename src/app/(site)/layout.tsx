@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Navbar from '@/components/Navbar';
+import Navbar from '@/ui/Navbar';
 import styles from './layout.module.css';
 
 export default function SiteLayout({
@@ -9,11 +9,13 @@ export default function SiteLayout({
     children: React.ReactNode;
 }) {
     return (
-        <div>
-            <Navbar />
-            <main>
-                {children}
-            </main>
+        <div className={styles.container}>
+            <div className={styles.content}>
+                <Navbar />
+                <main className={styles.main}>
+                    {children}
+                </main>
+            </div>
         </div>
     );
 }
