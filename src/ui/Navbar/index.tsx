@@ -8,7 +8,6 @@ import styles from './Navbar.module.css';
 const NAV_ITEMS = [
     { href: '/', label: 'Home' },
     { href: '/projects', label: 'Projects' },
-    { href: '/contact', label: 'Contact' },
 ];
 
 export default function Navbar() {

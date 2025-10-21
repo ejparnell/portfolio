@@ -132,54 +132,6 @@ const PROJECTS = [
     }
 ];
 
-const SHIELDS = [
-    {
-        name: 'Python',
-        imageURL: 'https://img.shields.io/badge/Python-3.8+-blue.svg',
-    },
-    {
-        name: 'Random Forest',
-        imageURL: 'https://img.shields.io/badge/ML-Random_Forest-green.svg',
-    },
-    {
-        name: 'ML Accuracy',
-        imageURL:
-            'https://img.shields.io/badge/Accuracy-95%25+-brightgreen.svg',
-    },
-    {
-        name: 'Data Science',
-        imageURL: 'https://img.shields.io/badge/Data_Science-EDA-yellow.svg',
-    },
-    {
-        name: 'TypeScript',
-        imageURL: 'https://img.shields.io/badge/TypeScript-4.5-blue.svg',
-    },
-    {
-        name: 'React',
-        imageURL: 'https://img.shields.io/badge/React-18.0-blue.svg',
-    },
-    {
-        name: 'Next.js',
-        imageURL: 'https://img.shields.io/badge/Next.js-+15.0-black.svg',
-    },
-    {
-        name: 'Mongoose',
-        imageURL: 'https://img.shields.io/badge/Mongoose-6.0-red.svg',
-    },
-    {
-        name: 'MongoDB',
-        imageURL: 'https://img.shields.io/badge/MongoDB-6.0-green.svg',
-    },
-    {
-        name: 'FastAPI',
-        imageURL: 'https://img.shields.io/badge/FastAPI-0.70-blue.svg',
-    },
-];
-
-function makeShield() {
-
-}
-
 export default function ProjectsPage() {
     return (
         <div>

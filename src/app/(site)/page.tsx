@@ -15,6 +15,12 @@ const contactLinks = [
         url: 'https://www.linkedin.com/in/elizabethjparnell/',
         icon: '/icons/in-logo/LI-In-Bug.png',
     },
+    {
+        id: 3,
+        name: 'Resume',
+        url: '/resume.pdf',
+        icon: '/icons/icon-resume.png',
+    }
 ];
 
 export default function Home() {
@@ -45,10 +51,7 @@ export default function Home() {
                 </p>
             </div>
             <p className={styles.description}>
-                Welcome to my portfolio! I&apos;m Beth Parnell, a passionate
-                software engineer and educator dedicated to crafting innovative
-                solutions and sharing knowledge. Explore my projects, skills,
-                and experiences as you navigate through my professional journey.
+                I&apos;m a Software Engineer and educator who believes technology should feel both intelligent and human. I love turning data into stories; building elegant frontends that don’t just visualize information but connect people to the power of AI in meaningful, seamless ways.
             </p>
 
             <div className={styles.contactLinks}>
