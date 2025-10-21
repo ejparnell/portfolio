@@ -1,0 +1,141 @@
+.squareOutline1 {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 2px solid var(--color-saturn-accent);
+    position: absolute;
+    bottom: 30px;
+    right: 155px;
+    z-index: -1;
+}
+
+.squareOutline2 {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 2px solid var(--color-saturn-accent);
+    position: absolute;
+    bottom: 30px;
+    right: 203px;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.squareOutline3 {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 2px solid var(--color-saturn-accent);
+    position: absolute;
+    bottom: 30px;
+    right: 251px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.squareBoldLine {
+    height: 100px;
+    width: 5px;
+    background: var(--color-saturn-accent);
+    position: absolute;
+    bottom: 150px;
+    right: 55px;
+    z-index: -1;
+}
+
+.squareFineLine {
+    height: 185px;
+    width: 2px;
+    background: var(--color-saturn-accent);
+    position: absolute;
+    bottom: 130px;
+    right: 43px;
+    z-index: -1;
+}
+
+.squareGhostCircle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: var(--color-saturn-orange);
+    background: linear-gradient(90deg, rgba(247, 145, 125, 0) 0%, var(--color-saturn-yellow) 100%);
+    position: absolute;
+    bottom: -35px;
+    right: -25px;
+    rotate: 55deg;
+    z-index: -1;
+}
+
+.squareCircleFilled {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: var(--color-saturn-pink);
+    background: linear-gradient(90deg, var(--color-saturn-pink) 0%, rgba(249, 178, 86, 0) 100%);
+    position: absolute;
+    bottom: 100px;
+    right: 60px;
+    z-index: -1;
+}
+
+.ghostDotsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+.ghostDot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: var(--color-saturn-accent);
+    z-index: -1;
+}
+
+.ghostSquare {
+    height: 150px;
+    width: 150px;
+    background: var(--color-saturn-pink);
+    background: linear-gradient(90deg, rgba(227, 83, 144, 0) 0%, var(--color-saturn-pink) 100%);
+    opacity: 0.5;
+    z-index: -2;
+    position: absolute;
+    top: 65px;
+    left: -4px;
+    rotate: 45deg;
+}
+
+.projects {
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+    height: calc(100vh - 120px);
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .projects {
+        padding: var(--spacing-6);
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects {
+        padding: var(--spacing-8);
+    }
+}

@@ -7,15 +7,15 @@ const contactLinks = [
         id: 1,
         name: 'GitHub',
         url: 'https://github.com/ejparnell',
-        icon: '/icons/github-mark/github-mark.png'
+        icon: '/icons/github-mark/github-mark.png',
     },
     {
         id: 2,
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/elizabethjparnell/',
-        icon: '/icons/in-logo/LI-In-Bug.png'
-    }
-]
+        icon: '/icons/in-logo/LI-In-Bug.png',
+    },
+];
 
 export default function Home() {
     return (
@@ -46,14 +46,13 @@ export default function Home() {
             </div>
             <p className={styles.description}>
                 Welcome to my portfolio! I&apos;m Beth Parnell, a passionate
-                software engineer and educator dedicated to crafting
-                innovative solutions and sharing knowledge. Explore my
-                projects, skills, and experiences as you navigate through my
-                professional journey.
+                software engineer and educator dedicated to crafting innovative
+                solutions and sharing knowledge. Explore my projects, skills,
+                and experiences as you navigate through my professional journey.
             </p>
 
             <div className={styles.contactLinks}>
-                {contactLinks.map(link => (
+                {contactLinks.map((link) => (
                     <a
                         key={link.id}
                         href={link.url}
